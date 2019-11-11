@@ -1,1 +1,6 @@
 puts "Hello, Everybody"
+puts "Enter a number of years"
+years = gets.chomp
+years = years.to_i
+hours = years * 365 * 24
+hours = hours.to_s 
