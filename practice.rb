@@ -1,7 +1,11 @@
-sum = 0
-3.times do
-    pring "Enter Number: "
-    sum = sum + gets.chomp.to_f
-end
-avg = sum/3
-puts "Average: #{avg}"
+loop do 
+    puts "Enter a guess"
+guess = gets.chomp.strip.to_i
+if guess > 100 
+    puts "High"
+elsif guess <= 100 || guess > 50 
+    puts "Medium"
+else
+    puts "Low"
+end 
+end 
