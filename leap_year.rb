@@ -1,9 +1,15 @@
-puts "Enter a starting year"
-starting_year = gets.chomp
-puts "Enter a ending_year"
-ending_year = gets.chomp
+puts "Enter the starting year"
+starting_year = gets.chomp.strip.to_i
+puts "Enter the ending_year"
+ending_year = gets.chomp.strip.to_i
 i = starting_year
-i == % 400 && % 100 && % 4 
-a = ending_year
-a == % 400 && % 100 && % 4
+leaps = []
+while i <= ending_year
+  if i % 4 == 0 && i % 100 != 0
+    leaps << i
+  elsif i % 400 == 0
+    leaps << i
+  end 
+  i += 1
 end 
+puts leaps.inspect
