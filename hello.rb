@@ -1,3 +1,2 @@
 puts "Hello, Everyone!"
-puts "Hello, Everbody
-"
+puts "Hello, Everbody!"
