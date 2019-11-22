@@ -1,14 +1,3 @@
-def poll(preferences)
-  loop do
-    puts "please enter 1 if you prefer #{preferences[0]} or 2 for #{preferences[1]}."
-    result = gets.chomp.strip.to_i
-    if result == 1 || result == 2
-      return result
-    end
-  end 
-end
-    
-
 ice_creams = ["chocolate ice cream","vanilla ice cream"]
 protein = ["steak","tofu"]
 starch = ["rice","pasta"]
