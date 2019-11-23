@@ -6,7 +6,7 @@ def add_up(i)
  return sum 
 end
 
-3.time do 
+3.times do 
   puts "Enter a number"
   n = gets.chomp.to_i
   total = add_up(n)
