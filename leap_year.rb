@@ -12,4 +12,5 @@ while i <= ending_year
   end 
   i += 1
 end 
+puts "There are the leap years between the years you chose:"
 puts leaps.inspect
