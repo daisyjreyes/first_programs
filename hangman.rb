@@ -1,37 +1,63 @@
-def hangman (str_1, arr_1)
-
-    output = ""
-
-    for i in (0..str_1.length-1)
-
-        if arr_1.includes?(str_1[i])
-
-            output += str_1[i]
-
-        else
-
-            output += "_"
-
-        end
-
-    end
-
-    return output
-
+def hangman(duke)
+	output_array = []
+	n = letter
+	for n in x do
+		if n.include?(d,u,k,e)
+		 false << output_array 
+		else
+		true << n.push("_")
+		end
+	end
+	return hangman(output_array.join[","])
 end
 
 
+   puts "Enter a letter, lets play hangman"
+   letter = gets.chomp.to_s
+loop do
+   if letter is == ("d,u,k,e")
+    then n.push(letter) 
+   elsif 
+   output_array << letter 
+   end
+end
 
 
+def hangman_answer
+    loop do
+  if guess.each.includes?("a,n,t")
+    then answer.push(guess) 
+  elsif guess.push(guess)
+  end
+  return guess[]
+  end
+end
 
-s = hangman("alphabet", ["a","e"])
+puts "Lets play hangman, enter a letter:"
+guess = gets.chomp.to_s
+guess[] 
+answer = ant
+"hangman_answer = #{answer}"  
 
 
+secret_word = "dog"
+guess = ""
+guess_count = 0 
+guess_limit = 3
+out_of_guesses = false
 
-puts s
+while guess != secret word and !out_of_guess
+ if guess_count < guess_limit
+  puts "Enter guess "
+  guess _ gets.chomp()
+  guess_count += 1
+ else
+  out_of_guess = true 
+ end 
+end 
 
-
-
-s = hangman ("testing", ["t","i"])
-
-puts s
+if out_of_guess 
+    puts "You lose"
+else 
+puts "You Won!"
+end 
